@@ -1,0 +1,99 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  site-url: https://example.com
+  title: "Multilingual Test"
+  author: 
+    name: J. O. Doe
+    corresponding: true
+    affiliations: 
+      - name: |- 
+          Scholarly Communication Department
+          
+          Indiana University Bloomington Libraries
+        department: Scholarly Communication
+        address: 1320 E 10th Street
+        city: Bloomington
+        state: IN
+        country: USA
+        postal-code: 47405
+        url: https://libraries.indiana.edu/scholarly-communication
+        ror: https://ror.org/02k40bc56
+    email: iusw@iu.edu
+    url: https://libraries.indiana.edu/scholarly-communication
+    orcid: 0009-0000-0000-0000
+    degrees: 
+      - Ph.D.
+  date: last-modified
+  date-format: "YYYY"
+  abstract: |
+    This book serves as a test case for evaluating the viability of babelquarto as a tool for integrating multilingual metadata and content into a scholarly publishing workflow. Developed as an exploratory project, it examines how multilingual abstracts, chapter metadata, navigation, and site structure can be managed within a single Quarto-based publication. The primary goal is not to present original research, but to assess whether babelquarto can support sustainable, reproducible, and scalable multilingual publishing practices appropriate for an academic library publishing program. Particular attention is given to the ease of authoring and maintaining parallel language versions, the clarity of language switching for readers, and the compatibility of multilingual outputs with standard discovery and dissemination channels. Findings from this test inform broader decisions about adopting multilingual metadata and content strategies in long-form scholarly publications.
+  description: |
+    A test of babelquarto for multilingual publishing.
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  references: references.bib
+  cover-image: cover.png
+  cover-image-alt: "Cover image for the multilingual_test book"
+  favicon: cover.png
+  downloads: [pdf, epub]
+  repo-url: https://github.com/IULibScholComm/multilingual_test
+  issue-url: https://github.com/IULibScholComm/multilingual_test/issues
+  repo-actions: [source, issue]
+  reader-mode: true
+  search: 
+    location: sidebar
+    type: textbox
+    copy-button: true
+    show-item-context: true
+  page-navigation: true
+  back-to-top-navigation: true
+  image: cover.png
+  image-alt: "Cover image for the multilingual_test book"
+  bread-crumbs: true
+  twitter-card: true
+  open-graph: true
+  sidebar: 
+    aria-label: Table of Contents
+    style: docked
+    collapse-level: 1
+    pinned: true
+    logo: cover.png
+    logo-alt: "Cover image for the multilingual_test book"
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: default
+      dark: darkly
+
+babelquarto:
+  languagelinks: sidebar
+  languagecodes:
+  - name: es
+    text: "Version in es"
+  - name: fr
+    text: "Version in fr"
+  - name: en
+    text: "Version in en"
+  mainlanguage: 'en'
+  languages: ['es', 'fr']
+title-es: Prueba multilingüe
+title-fr: Test multilingue
+description-es: Una prueba de babelquarto para la publicación multilingüe.
+description-fr: Test de babelquarto pour la publication multilingue.
+abstract-es: |
+  Este libro sirve como caso de prueba para evaluar la viabilidad de babelquarto como herramienta para integrar metadatos y contenidos multilingües en un flujo de trabajo de publicación académica. Desarrollado como un proyecto exploratorio, examina cómo se pueden gestionar los resúmenes multilingües, los metadatos de los capítulos, la navegación y la estructura del sitio dentro de una única publicación basada en Quarto. El objetivo principal no es presentar una investigación original, sino evaluar si babelquarto puede apoyar prácticas de publicación multilingües sostenibles, reproducibles y escalables adecuadas para un programa de publicación de bibliotecas académicas. Se presta especial atención a la facilidad de creación y mantenimiento de versiones lingüísticas paralelas, la claridad del cambio de idioma para los lectores y la compatibilidad de los resultados multilingües con los canales estándar de descubrimiento y difusión. Los resultados de esta prueba sirven de base para tomar decisiones más amplias sobre la adopción de estrategias de metadatos y contenidos multilingües en publicaciones académicas de formato largo.
+abstract-fr: |
+  Cet ouvrage sert de test pour évaluer la viabilité de babelquarto en tant qu'outil permettant d'intégrer des métadonnées et des contenus multilingues dans un processus de publication scientifique. Développé dans le cadre d'un projet exploratoire, il examine comment les résumés multilingues, les métadonnées des chapitres, la navigation et la structure du site peuvent être gérés au sein d'une seule publication basée sur Quarto. L'objectif principal n'est pas de présenter des recherches originales, mais d'évaluer si babelquarto peut prendre en charge des pratiques de publication multilingues durables, reproductibles et évolutives, adaptées à un programme de publication de bibliothèque universitaire. Une attention particulière est accordée à la facilité de création et de maintenance des versions linguistiques parallèles, à la clarté du changement de langue pour les lecteurs et à la compatibilité des résultats multilingues avec les canaux de découverte et de diffusion standard. Les résultats de ce test éclairent des décisions plus larges concernant l'adoption de stratégies de métadonnées et de contenu multilingues dans les publications universitaires de longue haleine.
+author-es: J. O. Doe
+author-fr: J. O. Doe
+lang: en
+
