@@ -77,11 +77,11 @@ babelquarto:
   languagelinks: sidebar
   languagecodes:
   - name: es
-    text: "Versión en español"
+    text: "Español"
   - name: fr
-    text: "Version en français"
+    text: "Français"
   - name: en
-    text: "Version in english"
+    text: "English"
   mainlanguage: 'en'
   languages: ['es', 'fr']
 title-es: Prueba multilingüe
