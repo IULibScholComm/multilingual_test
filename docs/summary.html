@@ -66,17 +66,13 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><meta property="og:title" content="2  Summary – Multilingual Test">
 <meta property="og:description" content="A test of babelquarto for multilingual publishing.">
-<meta property="og:image" content="https://example.com/cover.png">
+<meta property="og:image" content="./cover.png">
 <meta property="og:site_name" content="Multilingual Test">
 <meta property="og:image:alt" content="Cover image for the multilingual_test book">
-<meta property="og:image:height" content="1185">
-<meta property="og:image:width" content="1196">
 <meta name="twitter:title" content="2  Summary – Multilingual Test">
 <meta name="twitter:description" content="A test of babelquarto for multilingual publishing.">
-<meta name="twitter:image" content="https://example.com/cover.png">
+<meta name="twitter:image" content="./cover.png">
 <meta name="twitter:image:alt" content="Cover image for the multilingual_test book">
-<meta name="twitter:image-height" content="1185">
-<meta name="twitter:image-width" content="1196">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="nav-sidebar docked quarto-light">
@@ -294,9 +290,9 @@ ul.task-list li input[type="checkbox"] {
         </div>
         </div>
     <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Version in en</button><ul class="dropdown-menu" id="languages-links">
-<li><a class="dropdown-item" href="https://iulibscholcomm.github.io/multilingual_test/fr/summary.fr.html" id="language-link-fr">Version in fr</a></li>
-<li><a class="dropdown-item" href="https://iulibscholcomm.github.io/multilingual_test/es/summary.es.html" id="language-link-es">Version in es</a></li>
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Version in english</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="https://iulibscholcomm.github.io/multilingual_test/fr/summary.fr.html" id="language-link-fr">Version en français</a></li>
+<li><a class="dropdown-item" href="https://iulibscholcomm.github.io/multilingual_test/es/summary.es.html" id="language-link-es">Versión en español</a></li>
 </ul>
 </div>
 <div class="sidebar-menu-container"> 
@@ -440,7 +436,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/example\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

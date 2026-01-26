@@ -3,7 +3,6 @@ project:
   output-dir: docs
 
 book:
-  site-url: https://example.com
   title: "Multilingual Test"
   author: 
     name: J. O. Doe
@@ -78,11 +77,11 @@ babelquarto:
   languagelinks: sidebar
   languagecodes:
   - name: es
-    text: "Version in es"
+    text: "Versión en español"
   - name: fr
-    text: "Version in fr"
+    text: "Version en français"
   - name: en
-    text: "Version in en"
+    text: "Version in english"
   mainlanguage: 'en'
   languages: ['es', 'fr']
 title-es: Prueba multilingüe
